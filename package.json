@@ -1,0 +1,19 @@
+{
+  "name": "thorium-framework-tsx-server-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx thorium-cli --entryDir=src --outputDir=public/dist",
+    "package": "npx thorium-cli package --entryDir=src --outputDir=public/dist",
+    "serve": "npx thorium-cli serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "thorium-cli": "file:../../../thorium-cli",
+    "thorium-framework": "file:../../../thorium-framework"
+  }
+}
