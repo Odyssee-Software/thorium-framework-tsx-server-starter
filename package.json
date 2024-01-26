@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx thorium-cli --entryDir=src --outputDir=public/dist",
     "package": "npx thorium-cli package --entryDir=src --outputDir=public/dist",
+    "serve:dev": "npx thorium-cli serve build",
     "serve": "npx thorium-cli serve"
   },
   "author": "",
