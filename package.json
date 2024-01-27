@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx thorium-cli --entryDir=src --outputDir=public/dist",
-    "package": "npx thorium-cli package --entryDir=src --outputDir=public/dist",
-    "serve:dev": "npx thorium-cli serve build",
-    "serve": "npx thorium-cli serve"
+    "build": "npx thorium-cli build --tsconfig ./client/tsconfig.json --entryDir ./client/src --outputDir ./public/dist",
+    "package": "npx thorium-cli package --tsconfig client/tsconfig.json --entryDir client/src --outputDir public/dist",
+    "serve": "npx thorium-cli serve",
+    "start": "npx thorium-cli serve --dev --tsconfig client/tsconfig.json --entryDir client/src --outputDir public/dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/morgan": "^1.9.9",
     "express": "^4.18.2",
+    "morgan": "^1.10.0",
     "thorium-cli": "file:../../../thorium-cli",
     "thorium-framework": "file:../../../thorium-framework"
   }

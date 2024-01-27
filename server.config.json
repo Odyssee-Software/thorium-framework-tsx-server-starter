@@ -1,5 +1,5 @@
 {
-  "main" : "./server.js",
+  "main" : "./server/dist/main.js",
   "package" : "./package.zip",
   "devServer" : {
     "port": 3000,
@@ -10,5 +10,13 @@
       }
     }
   },
-  "client" : {}
+  "client" : {
+    "views" : {
+      "/" : "./views/index.html"
+    }
+  },
+  "routers" : [
+    "./server/dist/routers/index.js",
+    "./server/dist/routers/admin.js"
+  ]
 }

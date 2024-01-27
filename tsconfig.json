@@ -1,4 +1,0 @@
-{
-  "extends": "thorium-framework/config/tsconfig.json",
-  "include": [ "Globals.d.ts" , "src/**/*.ts" , "src/**/*.tsx" ]
-}
